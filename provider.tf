@@ -8,8 +8,8 @@ terraform {
   required_version = ">= 0.13"
   required_providers {
     kubectl = {
-      source  = "gavinbunney/kubectl"
-      version = ">= 1.11.3"
+      source = "lbvffvbl/kubectl"
+      version = "1.7.4"
     }
   }
 }
