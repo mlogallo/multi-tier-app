@@ -15,7 +15,8 @@ data "terraform_remote_state" "kubeconfig" {
 
 locals {
   # IKS Cluster Name
-  cluster_name = data.terraform_remote_state.kubeconfig.outputs.cluster_name
+  #  cluster_name = data.terraform_remote_state.kubeconfig.outputs.cluster_name
+  cluster_name = "new_cluster"
   # Kubernetes Configuration File
   kubeconfig = yamldecode(data.terraform_remote_state.kubeconfig.outputs.kubeconfig)
 }
